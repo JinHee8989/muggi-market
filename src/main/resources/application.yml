@@ -1,0 +1,50 @@
+#스프링부트 2.4 이후로는 spring.profiles.group.<source> 를 이용해서 여러 프로파일들을 한꺼번에 그룹지어 하나의 프로파일로 만들수 있다.
+spring:
+  profiles:
+    group:
+      "dev":  "devdb,common"
+      "prod": "proddb,common"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "common"
+
+server:
+  port: 8000
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "devdb"
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: "jdbc:mariadb://aehae.synology.me/muggi_dev"
+    username: "muggi_dev"
+    password: "temp!"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+server:
+  port: 8001
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "proddb"
+  datasource:
+    url: "jdbc:mariadb://aehae.synology.me/muggi-prod"
+    username: "muggi_prod"
+    password: "temp!"
+server:
+  port: 8002
+
