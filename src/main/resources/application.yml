@@ -32,6 +32,13 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
+  cache:
+    type: redis
+  redis:
+    host: localhost
+      #6379포트는 기본 포트임
+      port: 6379
+
 server:
   port: 8001
 
