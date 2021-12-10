@@ -2,15 +2,15 @@
 spring:
   profiles:
     group:
-      "dev":  "devdb,common"
-      "prod": "proddb,common"
+      dev:  devdb,common
+      prod: proddb,common
 
 ---
 
 spring:
   config:
     activate:
-      on-profile: "common"
+      on-profile: common
 
 server:
   port: 8000
@@ -21,12 +21,12 @@ server:
 spring:
   config:
     activate:
-      on-profile: "devdb"
+      on-profile: devdb
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: "jdbc:mariadb://aehae.synology.me/muggi_dev"
-    username: "muggi_dev"
-    password: "temp!"
+    url: jdbc:mariadb://aehae.synology.me/muggi_dev
+    username: muggi_dev
+    password: temp!
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
@@ -47,11 +47,11 @@ server:
 spring:
   config:
     activate:
-      on-profile: "proddb"
+      on-profile: proddb
   datasource:
-    url: "jdbc:mariadb://aehae.synology.me/muggi-prod"
-    username: "muggi_prod"
-    password: "temp!"
+    url: jdbc:mariadb://aehae.synology.me/muggi-prod
+    username: muggi_prod
+    password: temp!
 server:
   port: 8002
 
