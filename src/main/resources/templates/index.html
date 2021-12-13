@@ -24,93 +24,159 @@
     <div class="row">
         <div class="col-xs-12" style="height: 35px"></div>
         <div class="col-xs-8" style="background-color: grey; align: center; height: 150px">
-            <h1>MUGGI-MARKET</h1>
+            <h1 style="text-align: center">MUGGI-MARKET</h1>
         </div>
     </div>
     <!--top end-->
 
     <!--nav start-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!--nav end-->
     <!--carousel start -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/images/carousel1.png" class="d-block w-100" alt="event1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/carousel2.png" class="d-block w-100" alt="event2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/carousel3.png" class="d-block w-100" alt="event3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="classpath:/resources/static/images/carousel1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     <!--carousel end -->
     <!--contents start -->
-    <div style="height: 1000px">
-        <h1>ggg</h1>
+    <div class="row">
+        <div class="row">
+            <div style="height: 1000px">
+                <h2 style="text-align: center">오늘의 추천 상품 3개</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div style="height: 1000px">
+                <h2 style="text-align: center">인기 상품 3개</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div style="height: 1000px">
+                <h2 style="text-align: center">신상품 3개</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div style="height: 1000px">
+                <h2 style="text-align: center">특가 상품 3개</h2>
+            </div>
+        </div>
     </div>
     <!--contents end -->
+
+    <!--footer start-->
+    <div class="row">
+        <hr class="rgba-white-light">
+        <div class="container footer">
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">첫번째</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="termsOfService.do">두번째</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="privacyPolicy.do">세번째</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="noticeList.do">네번째</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex text-center justify-content-center mb-sm-0 mb-4">
+            <div class="col-md-8 col-12">
+                <p style="line-height: 1.7rem">
+                    회사명 : 주식회사 Goose &nbsp;&nbsp; 사업자등록번호 : 123-45-7890 <br> 주소 : 경기도 동두천시 동두천로 139 부영아파트 902동 1104호
+                    <br> 연락처 : 010-1234-5678
+                    &nbsp; 개인정보관리 책임자 : 박재명 &nbsp; 대표자 : 박재명(JM)
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2021 Copyright : Muggi-Market, All rights reserved
+        </div>
+
+    </div>
+    <!--footer end-->
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
