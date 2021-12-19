@@ -2,4 +2,5 @@ rootProject.name = 'muggi-market'
 include 'muggi-module-common'
 include 'muggi-module-product'
 include 'muggi-module-admin'
+include 'muggi-module-customer'
 
