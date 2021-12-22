@@ -11,11 +11,11 @@ spring:
   config:
     activate:
       on-profile: common
-
-server:
-  port: 8000
-
-
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML5
 
 ---
 
@@ -25,20 +25,22 @@ spring:
       on-profile: devdb
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://aehae.synology.me/muggi_dev
-    username: muggi_dev
-    password: temp!
+    url: jdbc:mariadb://aehae.synology.me:3306/ibksb_local
+    username: ibksb_local
+    password: Ibkwjcnrdmsgod!18
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: update
+#      ddl-auto: update
       show-sql: true
   cache:
     type: redis
   redis:
-    host: localhost
-      #6379포트는 기본 포트임
-      port: 6379
+    host: 127.0.0.1
+    #6379포트는 기본 포트임
+    port: 6379
+  thymeleaf:
+    cache: false
 
 server:
   port: 8001
@@ -53,6 +55,9 @@ spring:
     url: jdbc:mariadb://aehae.synology.me/muggi-prod
     username: muggi_prod
     password: temp!
+  thymeleaf:
+    cache: true
+
 server:
   port: 8002
 
