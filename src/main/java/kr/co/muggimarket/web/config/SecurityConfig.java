@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //스프링시큐리티가 세션을 생성하지도, 기존것을 사용하지도 않음
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
-        //UsernamePasswordAuthenticationFilter 전에 jwtTokenProvider 필터를 적용
+        //UsernamePasswordAuthenticationFilter 전에 jwtAuthenticationFilter 필터를 적용
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
 
