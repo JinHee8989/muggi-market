@@ -1,6 +1,7 @@
 package kr.co.muggimarket.web.config;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -15,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final AuthenticationProvider authenticationProvider;
+//    private final AuthenticationProvider authenticationProvider;
 
 
     /**
@@ -23,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.authenticationProvider(authenticationProvider);
+//        auth.authenticationProvider(authenticationProvider);
     }
 
 
@@ -57,13 +58,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         //UsernamePasswordAuthenticationFilter 전에 jwtAuthenticationFilter 필터를 적용
-        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+//        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
 
         //exception이 발생하면 우리가 만든 accessDeniedHandler와 authenticationEntryPoint를 쓴다는것
-        http.exceptionHandling()
-                .accessDeniedHandler(accessDeniedHandler())
-                .authenticationEntryPoint(authenticationEntryPoint());
+//        http.exceptionHandling()
+//                .accessDeniedHandler(accessDeniedHandler())
+//                .authenticationEntryPoint(authenticationEntryPoint());
 
     }
 

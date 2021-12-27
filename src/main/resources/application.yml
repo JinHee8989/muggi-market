@@ -25,9 +25,9 @@ spring:
       on-profile: devdb
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://aehae.synology.me:3306/ibksb_local
-    username: ibksb_local
-    password: Ibkwjcnrdmsgod!18
+    url: jdbc:mariadb://aehae.synology.me:3306/muggi_dev
+    username: muggi_dev
+    password: DontDreamBeIt!89
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
