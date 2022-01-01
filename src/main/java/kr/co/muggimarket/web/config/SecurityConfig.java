@@ -37,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/image/**");
     }
 
+
     /**
      * HttpSecurity 패턴은 보안 처리(접근 막음)
      */
